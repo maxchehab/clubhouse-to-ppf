@@ -1,3 +1,3 @@
-# seeder
+# clubhouse to ppf
 
-seeder is a cli and library to publish fake audit log events to WorkOS
+generates a ppf from stories created in clubhouse
