@@ -31,7 +31,7 @@ const generateHeader = (member: string) => {
   const todayString = `${today.getMonth() + 1}/${today.getDate()}`;
 
   const lastWeek = new Date(new Date().setDate(today.getDate() - 7));
-  const lastWeekString = `${lastWeek.getMonth()}/${lastWeek.getDate()}`;
+  const lastWeekString = `${lastWeek.getMonth() + 1}/${lastWeek.getDate()}`;
 
   return `# ${member}'s PPF (${lastWeekString}-${todayString})\n`;
 };
