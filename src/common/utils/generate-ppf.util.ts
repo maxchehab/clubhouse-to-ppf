@@ -21,7 +21,8 @@ const generatePPF = (
 
 const getPullRequest = (story: any) => {
   if (story.branches && story.branches[0] && story.branches[0].pull_requests) {
-    return story.branches[0].pull_requests[0].url;
+    const pr = story.branches[0].pull_requests[0];
+    return (pr && pr.url) || null;
   }
 };
 

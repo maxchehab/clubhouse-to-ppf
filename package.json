@@ -1,6 +1,6 @@
 {
   "name": "@maxchehab/clubhouse-to-ppf",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "files": [
     "dist/**/*",
     "/npm-shrinkwrap.json",
@@ -25,7 +25,7 @@
     "format": "prettier \"src/**/*.{js,ts,tsx}\" --write",
     "prepare": "yarn run build",
     "bump-version": " auto-upgrade-npm-version",
-    "prepack": "rm -rf dist && tsc -b && oclif-dev manifest && oclif-dev readme",
+    "prepack": "rm -rf dist && tsc -b && oclif-dev manifest",
     "postpack": "rm -f oclif.manifest.json",
     "prepublishOnly": "yarn run lint",
     "preversion": "yarn run lint"
